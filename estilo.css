@@ -442,19 +442,51 @@ h3 {
 
 
 
-.footer p {
+/* Estilos para el footer con degradado en gamas de grises */
+.footer {
+    background: linear-gradient(to bottom, #555555, #666666, #777777, #888888);
+    color: #ffffff; /* Mantenemos blanco puro para mayor contraste */
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #cccccc;
+}
+
+.footer-content p {
     margin: 0.5rem 0;
+    color: #ffffff; /* Asegura que el color del texto sea blanco */
 }
 
-.footer .social-media a {
-    margin: 0 0.5rem;
-    color: white;
+.footer-content p strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #ffffff; /* Color del texto fuerte en blanco */
 }
 
-.footer .social-media img {
-    width: 24px;
-    height: 24px;
+.footer a {
+    color: #ffffff; /* Enlaces en blanco para mayor contraste */
+    text-decoration: none;
 }
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.contact-client, .contact-designer {
+    margin: 1rem 0;
+}
+
+/* Estilo para el separador sutil */
+.footer-separator {
+    border: 0;
+    border-top: 1px solid #ffffff; /* Línea delicada en blanco */
+    margin: 1rem auto; /* Espacio alrededor de la línea */
+    width: 30%; /* La línea ocupa el 50% del ancho del contenedor */
+}
+
+
+
+
 .back-to-top {
     position: fixed;
     bottom: 20px;
