@@ -403,6 +403,25 @@ h3 {
     color: #2b2b2b; /* Asegura que el color del texto resaltado sea uniforme */
 }
 
+.contact-info a { 
+    color: #c53104; /* Cambia el color por defecto de los enlaces */
+    font-size: 1.1rem;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+/* Efectos de hover para enlaces */
+.contact-info a:hover {
+    color: #c53104;
+    transform: scale(1.15); /* Aumenta el tamaño al pasar el cursor */
+    transition: color 0.3s, transform 0.3s; /* Añade una transición suave */
+    text-decoration: underline;
+    font-size: 1.3rem; /* Aumenta el tamaño de la fuente */
+}
+
+
+
+
 /* Estilos para la sección del mapa */
 .map {
     text-align: center;
