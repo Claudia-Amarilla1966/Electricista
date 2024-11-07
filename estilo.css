@@ -5,6 +5,44 @@ body {
 }
 
 
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f0f0f0; 
+    color: #333; 
+    font-size: 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.marquee-text {
+    display: inline-block;
+    position: relative;
+    left: 100%;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+nav {
+    margin-top: 35px;
+}
+
+
+
 /* Estilos CSS */
 .navbar {
     display: flex;
