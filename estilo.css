@@ -26,6 +26,7 @@ body {
     position: relative;
     left: 100%;
     animation: marquee 20s linear infinite;
+    white-space: nowrap; /* Asegura que el texto no se divida en líneas */
 }
 
 @keyframes marquee {
@@ -36,6 +37,9 @@ body {
         left: -100%;
     }
 }
+@media (max-width: 600px) { 
+    .marquee-text { font-size: 16px; /* Ajusta el tamaño del texto */ animation: marquee 30s linear infinite; /* Alenta la animación para mejor legibilidad */ }
+    }
 
 nav {
     margin-top: 35px;
