@@ -56,8 +56,8 @@ nav {
 }
 
 .navbar .logo img {
-    width: 100px; /* Ajusta este valor según el tamaño deseado */
-    height: auto; /* Mantiene la proporción del logo */
+    width: 100px; 
+    height: auto; 
 }
 
 .company-name h1 {
@@ -229,7 +229,7 @@ header p {
     padding: 1rem;
     background-color: #d7d7d7; /* Color de fondo gris claro */
     margin-top: 0,8rem;
-    border-radius: 8px; /* Bordes redondeados */
+    border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
