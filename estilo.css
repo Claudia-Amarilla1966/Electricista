@@ -187,15 +187,15 @@ nav {
 }
 
 
-@media (min-width: 320px) and (max-width: 491px) {
+@media (min-width: 320px) and (max-width: 480px) {
     
     .hero-text h1, .hero-text p {
         font-size: 1.0em;
-        margin: 2px;
+        margin: 3px;
     }
     .contact-button {
         font-size: 14px;
-        padding: 8px;
+        padding: 4px;
     }
 }
 
