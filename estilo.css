@@ -490,6 +490,7 @@ h3 {
     transition: color 0.3s, transform 0.3s; 
 }
 
+
 .footer {
     background: linear-gradient(to bottom, #555555, #666666, #777777, #888888);
     color: #ffffff; 
@@ -519,8 +520,21 @@ h3 {
     text-decoration: underline;
 }
 
-.contact-client, .contact-designer {
+.contact-client {
     margin: 1rem 0;
+}
+
+.contact-designer-wrapper {
+    display: flex;
+    justify-content: flex-start; /* Alínea tus datos a la izquierda */
+    margin-top: 2rem; /* Coloca tus datos más abajo */
+}
+
+.contact-designer {
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    color: #cccccc; /* Color menos destacado */
+    opacity: 0.8; /* Menor opacidad para darle menos relevancia */
+    text-align: left;
 }
 
 .footer-separator {
@@ -529,6 +543,9 @@ h3 {
     margin: 1rem auto;
     width: 30%; 
 }
+
+
+
 
 
 
