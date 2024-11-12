@@ -430,6 +430,29 @@ h3 {
     color: #2b2b2b;
 }
 
+.blinking {
+    animation: colorAndScale 1.5s infinite alternate;
+    color: #333333; /* Color inicial del texto gris oscuro */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f0f0f0; /* Fondo gris claro */
+    border: 2px solid #ccc; /* Borde gris claro */
+    display: inline-block; /* Asegura que el tamaño del elemento sea contenido */
+}
+
+@keyframes colorAndScale {
+    0% {
+        transform: scale(1);
+        color: #333333; /* Color inicial gris oscuro */
+    }
+    100% {
+        transform: scale(1.2); /* Aumenta el tamaño */
+        color: #ff6600; /* Cambio a un color llamativo */
+    }
+}
+
+
+
 .contact-info p {
     font-size: 1.2rem;
     color: #2e2b2b;
@@ -483,8 +506,8 @@ h3 {
 .map-container iframe {
     border-radius: 10px;
 }
-
-.contact-info h2:hover, .map h2:hover {
+/* .contact-info h2:hover, */
+ .map h2:hover {
     color: #c53104; 
     transform: scale(1.05); 
     transition: color 0.3s, transform 0.3s; 
