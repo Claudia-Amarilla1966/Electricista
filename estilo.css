@@ -451,6 +451,27 @@ h3 {
     }
 }
 
+/* Media Queries para pantallas pequeñas (320px a 500px) */
+@media (max-width: 500px) {
+    .blinking {
+        font-size: 14px; /* Ajusta el tamaño del texto */
+        padding: 8px; /* Reduce el espaciado interno */
+        border-radius: 4px; /* Ajusta los bordes redondeados */
+        background-color: #e0e0e0; /* Ajusta el fondo gris claro */
+        border: 1px solid #bbb; /* Ajusta el borde gris claro */
+    }
+}
+
+@media (max-width: 320px) {
+    .blinking {
+        font-size: 12px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+        padding: 6px; /* Reduce aún más el espaciado interno */
+        border-radius: 3px; /* Ajusta los bordes redondeados */
+        background-color: #d0d0d0; /* Ajusta el fondo gris claro */
+        border: 1px solid #aaa; /* Ajusta el borde gris claro */
+    }
+}
+
 
 
 .contact-info p {
