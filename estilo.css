@@ -513,7 +513,6 @@ h3 {
     transition: color 0.3s, transform 0.3s; 
 }
 
-
 /* Estilos para el footer con degradado en gamas de grises */
 .footer {
     background: linear-gradient(to bottom, #555555, #666666, #777777, #888888);
@@ -526,9 +525,6 @@ h3 {
 .footer-content p {
     margin: 0.5rem 0;
     color: #ffffff; 
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    overflow: hidden; /* Oculta el texto desbordado */
-    text-overflow: ellipsis; /* Añade puntos suspensivos al final del texto desbordado */
 }
 
 .footer-content p strong {
@@ -574,15 +570,32 @@ h3 {
 /* Media Queries para pantallas pequeñas */
 @media (max-width: 600px) {
     .footer-content p {
+        font-size: 16px; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+
+    .footer-content p:first-child {
+        display: block;
+    }
+
+    .footer-content p:first-child span {
+        display: block;
+        margin-top: 0.5rem;
+        text-align: center;
         font-size: 14px; /* Ajusta el tamaño del texto para pantallas pequeñas */
     }
 }
 
 @media (max-width: 480px) {
     .footer-content p {
+        font-size: 14px; /* Ajusta el tamaño del texto para pantallas muy pequeñas */
+    }
+    
+    .footer-content p:first-child span {
         font-size: 12px; /* Ajusta el tamaño del texto para pantallas muy pequeñas */
     }
 }
+
+
 
 
 
