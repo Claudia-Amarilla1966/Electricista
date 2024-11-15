@@ -151,29 +151,31 @@ nav {
     text-align: center;
     color: white;
 }
+
 .hero-section img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    width: 100%; 
+    max-height: auto;
+    border-radius: 8px; 
 }
 .hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 15px;
     border-radius: 5px;
     width: 80%;
     max-width: 600px;
 }
+
 .hero-text h1 {
     margin-bottom: 10px;
-    font-size: 2em;
+    font-size:2em;
 }
 .hero-text p {
     margin-bottom: 20px;
-    font-size: 1.2em;
+    font-size:1.2em;
 }
 .contact-button  {
     background-color: #f44336;
@@ -189,8 +191,8 @@ nav {
 }
 
 
-@media (min-width: 320px) and (max-width: 480px) {
-    
+
+@media (min-width:320px) and (max-width: 480px) {
     .hero-text h1, .hero-text p {
         font-size: 1.0em;
         margin: 3px;
@@ -202,14 +204,14 @@ nav {
 }
 
 
-@media (min-width:480px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
     
     .hero-text h1, .hero-text p {
         font-size: 1.5em;
     }
     .contact-button {
         font-size: 16px;
-    }
+    } 
 }
 
 header {
@@ -229,7 +231,7 @@ header p {
     text-align: center;
     padding: 1rem;
     background-color: #d7d7d7; 
-    margin-top: 0,8rem;
+    margin-top: 0.2rem;
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
@@ -243,6 +245,17 @@ header p {
 .intro p {
     font-size: 1.2rem;
     color: #555; 
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    border: 0;
 }
 
 
