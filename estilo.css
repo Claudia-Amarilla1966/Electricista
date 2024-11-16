@@ -167,6 +167,8 @@ nav {
     border-radius: 5px;
     width: 80%;
     max-width: 600px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .hero-text h1 {
