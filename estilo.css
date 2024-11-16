@@ -145,8 +145,8 @@ nav {
         display: flex; 
     }
 }
-
-.hero-section {
+/* origianl inicio */
+/* .hero-section {
     position: relative;
     text-align: center;
     color: white;
@@ -235,7 +235,120 @@ nav {
         font-size: 16px;
         padding: 6px;
     } 
+} */
+/* fin original */
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
 }
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.hero-text h1 {
+    margin-bottom: 10px;
+    font-size:2em;
+    margin-top: 0;
+}
+.hero-text p {
+    margin-bottom: 20px;
+    font-size:1.2em;
+    margin-top: 5px;
+}
+
+.contact-button  {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Media Query para dispositivos pequeños */
+@media (min-width: 320px) and (max-width: 480px) {
+    .hero-text {
+        width: 90%;
+        padding:8px;
+        max-width: 90%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 20px;
+        margin-bottom: 10px;
+        
+    }
+
+    .hero-text h1 {
+        font-size:  1.2em;
+        margin-bottom: 5px;
+    } 
+    .hero-text p {
+        font-size: 1em;
+        margin-bottom: 10px;
+        margin-top: 3px
+    }
+
+    .contact-button {
+        font-size: 12px;
+        padding: 6px;
+        margin-top: 10px;
+    }
+}
+
+/* Media Query para dispositivos medianos */
+@media (min-width: 480px) and (max-width: 768px) {
+    .hero-text {
+        width: 80%;
+        padding: 12px;
+        max-width: 600px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 10px;
+        margin-bottom: 30px;
+        /* max-height: 80%; */
+    }
+
+    .hero-text h1, .hero-text p {
+        font-size: 1.5em;
+        margin: 5px;
+    }
+
+    .contact-button {
+        font-size: 16px;
+        padding: 6px;
+    }
+}
+
+
+
+
+
+
+
 
 header {
     text-align: center;
