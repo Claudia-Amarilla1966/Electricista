@@ -110,7 +110,7 @@ nav {
     top: 1rem;
     transition: box-shadow 0.3s ease-in-out;
     box-shadow: 0 0 5px rgb(224, 226, 226);
-
+    outline: none;
 }
 
 @media (max-width: 768px) {
@@ -644,6 +644,7 @@ h3 {
     box-shadow: 0 0 5px rgb(224, 226, 226);
     transition: box-shadow 0.3s ease-in-out;
     animation: bounce 2s infinite;
+    outline: none;
 }
 
 .back-to-top:hover {
@@ -678,7 +679,8 @@ h3 {
     box-shadow: 0 0 5px rgb(224, 226, 226);
     transition: background-color 0.3s ease;
     animation: bounce 2s infinite;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
+    outline: none;
 }
 
 .whatsapp-button:hover {
