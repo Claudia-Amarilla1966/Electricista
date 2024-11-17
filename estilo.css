@@ -646,9 +646,6 @@ h3 {
     animation: bounce 2s infinite;
 }
 
-.back-to-top i { 
-    font-size: 24px; /* Ajuste específico del tamaño del icono */
-}
 .back-to-top:hover {
     background-color: #d32f2f;
 }
@@ -682,10 +679,6 @@ h3 {
     transition: background-color 0.3s ease;
     animation: bounce 2s infinite;
     margin-bottom: 10px; 
-}
-
-.whatsapp-button i { 
-    font-size: 24px; /* Ajuste específico del tamaño del icono */ 
 }
 
 .whatsapp-button:hover {
