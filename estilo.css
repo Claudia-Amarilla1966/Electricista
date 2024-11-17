@@ -111,6 +111,7 @@ nav {
     transition: box-shadow 0.3s ease-in-out;
     box-shadow: 0 0 5px rgb(224, 226, 226);
     outline: none;
+    -webkit-tap-highlight-color: transparent; /* Quitar resalte en móviles */
 }
 
 @media (max-width: 768px) {
@@ -645,6 +646,7 @@ h3 {
     transition: box-shadow 0.3s ease-in-out;
     animation: bounce 2s infinite;
     outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .back-to-top:hover {
@@ -681,6 +683,7 @@ h3 {
     animation: bounce 2s infinite;
     margin-bottom: 10px;
     outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .whatsapp-button:hover {
