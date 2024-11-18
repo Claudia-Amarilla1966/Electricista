@@ -108,12 +108,16 @@ nav {
     position: absolute;
     right: 2rem; 
     top: 1rem;
+
 }
+
+
 @media (max-width: 768px) {
 .navbar {
     flex-direction: column;
     align-items: center;
 }
+
 
 .company-name h1 {
     margin-left: 0;
