@@ -686,11 +686,12 @@ h3 {
 
 }
 
-
-
-
-
-
+.nav-links a:focus,
+.whatsapp-button:focus,
+.whatsapp-button:focus,
+.menu-toggle:focus { 
+    outline: none; -webkit-tap-highlight-color: transparent; 
+}
 
 
 
