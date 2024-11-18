@@ -690,6 +690,21 @@ h3 {
     background-color: #1ebea5;
 
 }
+/* Eliminar el resalte de foco en todos los elementos interactivos */
+a:focus, button:focus, input:focus {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Ajuste específico para tu menú y otros enlaces */
+.nav-links a:focus,
+.whatsapp-button:focus,
+.back-to-top:focus,
+.menu-toggle:focus,
+a:focus {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
 
 
 
