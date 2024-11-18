@@ -145,6 +145,15 @@
     </footer>
     <a href="#" class="back-to-top" aria-label="Volver arriba">&#8679;</a>
     
-    <script src="./../javascrip/script.js"></script>
+    <script>
+        document.querySelector('.back-to-top').addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
