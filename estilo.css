@@ -98,6 +98,17 @@ nav {
     color: #ff5722;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 2rem; 
+    top: 1rem;
+}
 @media (max-width: 768px) {
 .navbar {
     flex-direction: column;
