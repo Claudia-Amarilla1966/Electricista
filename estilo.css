@@ -211,6 +211,15 @@ nav {
         font-size: 16px;
     }
 }
+@media (min-width: 320px) and (max-width: 480px) { 
+    .hero-text 
+    { width: 90%; padding: 10px; } 
+}
+
+/* Media query para pantallas medianas (480px a 768px) */ 
+@media (min-width: 480px) and (max-width: 768px) { 
+    .hero-text { width: 85%; padding: 12px; } 
+}
 
 header {
     text-align: center;
