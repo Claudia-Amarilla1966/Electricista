@@ -686,12 +686,18 @@ h3 {
 
 }
 
-.nav-links a:focus,
-.whatsapp-button:focus,
-.whatsapp-button:focus,
-.menu-toggle:focus { 
-    outline: none; -webkit-tap-highlight-color: transparent; 
+/* Eliminar el resalte de foco en todos los elementos interactivos */
+*:focus {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
 }
 
+.nav-links a:focus,
+.whatsapp-button:focus,
+.back-to-top:focus,
+.menu-toggle:focus {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
 
 
