@@ -714,31 +714,5 @@ h3 {
 }
 
 
-.css-validation-icons {
-    text-align: left; /* Alinea los íconos a la izquierda */
-    margin-top: 1rem; /* Añade un margen superior para separación */
-    font-size: 14px; /* Ajusta el tamaño del texto */
-    color:#faf8f8; /* Cambia el color del texto a negro */
-    display: flex; /* Utiliza flexbox para la alineación */
-    align-items: center; /* Alinea verticalmente los íconos y el texto */
-}
 
-.css-validation-icons p 
-{ margin: 0; /* Elimina el margen superior e inferior de los párrafos */ 
-    color:#faf8f8; /* Cambia el color del texto a #cccccc */ 
-    font-size: 0.9rem;
-    opacity: 0.8;
-}
-.css-validation-icons a {
-    color: #faf8f8; /* Cambia el color del texto de los enlaces a #cccccc */
-    font-size: 0.9rem;
-    opacity: 0.8;
-}
-
-.css-validation-icons img {
-    width: 60px; /* Ajusta el ancho de las imágenes a un tamaño más visible */
-    height: auto; /* Mantiene la proporción de las imágenes */
-    margin-right: 0.5rem; /* Añade un margen entre las imágenes */
-    vertical-align: middle; /* Alinea verticalmente las imágenes */
-}
 
