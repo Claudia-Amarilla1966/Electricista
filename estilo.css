@@ -211,7 +211,7 @@ nav {
         font-size: 16px;
     }
 }
-/* Media query para pantallas pequeñas (320px a 480px) */
+
 @media (min-width: 320px) and (max-width: 480px) { 
     .hero-text { 
         width: 85%; 
@@ -219,7 +219,7 @@ nav {
     } 
 }
 
-/* Media query para pantallas medianas (480px a 768px) */ 
+
 @media (min-width: 480px) and (max-width: 768px) { 
     .hero-text { 
         width: 80%; 
@@ -239,6 +239,12 @@ header p {
     margin: 10px 0 0;
     font-size: 1.2em;
 }
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
 .intro {
     text-align: center;
     padding: 1rem;
@@ -246,6 +252,12 @@ header p {
     margin-top: 0.2rem;
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.intro .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .intro h2 {
@@ -297,12 +309,13 @@ header p {
     border-radius: 5px;
     transition: opacity 0.3s ease;
 }
-.service:hover {
+.service:hover img{
     opacity:0.9;
 }
 .service h2 {
     font-size: 1.5em;
     margin: 10px 0;
+    color: #333;
 }
 .service p {
     font-size: 1em;
@@ -404,39 +417,7 @@ h3 {
 }
 }
 
-.testimonials {
-    text-align: center;
-    padding: 2rem;
-    background-color:  #bcaaaa;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    margin-top: 2rem;
-}
 
-.testimonials h2 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    color: #333;
-}
-
-.testimonial {
-    margin: 1rem 0;
-    padding: 1rem;
-    background-color: #cec8c8;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial p {
-    font-size: 1.2rem;
-    color: #333333;
-}
-
-.testimonial h4 {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    color: #333;
-}
 
 /* contacto */
 .contact-info {
@@ -456,43 +437,43 @@ h3 {
 
 .blinking {
     animation: colorAndScale 1.5s infinite alternate;
-    color: #333333; /* Color inicial del texto gris oscuro */
-    padding: 10px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    background-color: #f0f0f0; /* Fondo gris claro */
-    border: 2px solid #ccc; /* Borde gris claro */
-    display: inline-block; /* Asegura que el tamaño del elemento sea contenido */
+    color: #333333; 
+    padding: 10px; 
+    border-radius: 5px;
+    background-color: #f0f0f0; 
+    border: 2px solid #ccc; 
+    display: inline-block; 
 }
 
 @keyframes colorAndScale {
     0% {
         transform: scale(1);
-        color: #333333; /* Color inicial gris oscuro */
+        color: #333333; 
     }
     100% {
-        transform: scale(1.2); /* Aumenta el tamaño */
-        color: #ff6600; /* Cambio a un color llamativo */
+        transform: scale(1.2); 
+        color: #ff6600; 
     }
 }
 
-/* Media Queries para pantallas pequeñas (320px a 500px) */
+
 @media (max-width: 500px) {
     .blinking {
-        font-size: 14px; /* Ajusta el tamaño del texto */
-        padding: 8px; /* Reduce el espaciado interno */
-        border-radius: 4px; /* Ajusta los bordes redondeados */
-        background-color: #e0e0e0; /* Ajusta el fondo gris claro */
-        border: 1px solid #bbb; /* Ajusta el borde gris claro */
+        font-size: 14px; 
+        padding: 8px; 
+        border-radius: 4px; 
+        background-color: #e0e0e0; 
+        border: 1px solid #bbb; 
     }
 }
 
 @media (max-width: 320px) {
     .blinking {
-        font-size: 12px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
-        padding: 6px; /* Reduce aún más el espaciado interno */
-        border-radius: 3px; /* Ajusta los bordes redondeados */
-        background-color: #d0d0d0; /* Ajusta el fondo gris claro */
-        border: 1px solid #aaa; /* Ajusta el borde gris claro */
+        font-size: 12px; 
+        padding: 6px;
+        border-radius: 3px; 
+        background-color: #d0d0d0; 
+        border: 1px solid #aaa; 
     }
 }
 
@@ -551,7 +532,7 @@ h3 {
 .map-container iframe {
     border-radius: 10px;
 }
-/* .contact-info h2:hover, */
+
 .map h2:hover {
     color: #c53104; 
     transform: scale(1.05); 
@@ -559,12 +540,6 @@ h3 {
 }
 
 
-
-
-
-
-
-/* Estilos para el footer con degradado en gamas de grises */
 .footer {
     background: linear-gradient(to bottom, #555555, #666666, #777777, #888888);
     color: #ffffff; 
@@ -592,6 +567,11 @@ h3 {
 
 .footer a:hover {
     text-decoration: underline;
+    color: #000000;
+    transform: scale(1.15); 
+    transition: color 0.3s, transform 0.3s; 
+    text-decoration: underline;
+    font-size: 1.3rem; 
 }
 
 .contact-client {
@@ -600,14 +580,14 @@ h3 {
 
 .contact-designer-wrapper {
     display: flex;
-    justify-content: flex-start; /* Alínea tus datos a la izquierda */
-    margin-top: 2rem; /* Coloca tus datos más abajo */
+    justify-content: flex-start; 
+    margin-top: 2rem; 
 }
 
 .contact-designer {
-    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
-    color: #cccccc; /* Color menos destacado */
-    opacity: 0.8; /* Menor opacidad para darle menos relevancia */
+    font-size: 0.9rem;
+    color: #cccccc; 
+    opacity: 0.8;
     text-align: left;
 }
 
@@ -618,10 +598,10 @@ h3 {
     width: 30%; 
 }
 
-/* Media Queries para pantallas pequeñas */
+
 @media (max-width: 600px) {
 .footer-content p {
-    font-size: 16px; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    font-size: 16px; 
 }
 
 .footer-content p:first-child {
@@ -632,14 +612,9 @@ h3 {
     display: block;
     margin-top: 0.5rem;
     text-align: center;
-    font-size: 14px; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    font-size: 14px; 
 }
 }
-
-
-
-
-
 
 .back-to-top {
     position: fixed;
@@ -698,7 +673,7 @@ h3 {
 
 }
 
-/* Eliminar el resalte de foco en todos los elementos interactivos */
+
 *:focus {
     outline: none !important;
     -webkit-tap-highlight-color: transparent;
@@ -712,6 +687,16 @@ h3 {
     -webkit-tap-highlight-color: transparent;
 }
 
+.credencial a{
+    color:rgb(239, 232, 232);
+}
+.credencial a:hover {
+    color: #000000;
+    transform: scale(1.15); 
+    transition: color 0.3s, transform 0.3s; 
+    text-decoration: underline;
+    font-size: 1.3rem; 
+}
 
 
 
