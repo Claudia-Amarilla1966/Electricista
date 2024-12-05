@@ -688,7 +688,11 @@ h3 {
 }
 
 .credencial a{
-    color:rgb(239, 232, 232);
+    color:#f27425f3;
+    font-weight:bold ;
+    font-style: normal;
+    text-transform: uppercase;
+    
 }
 .credencial a:hover {
     color: #000000;
