@@ -674,6 +674,40 @@ h3 {
 }
 
 
+.whatsapp-button:active {
+    background-color: #1ebea5; /* Color igual al hover al presionar */
+}
+
+.whatsapp-button:after {
+    content: attr(aria-label); /* Mostrar el texto del aria-label */
+    position: absolute;
+    bottom: 55px; /* Reducido para acercar el cartel al botón */
+    right: 0;
+    background-color: #1ebea5; /* Color igual al del hover */
+    color: white;
+    padding: 5px 10px; /* Ajusta el padding para un mayor espaciado horizontal */
+    border-radius: 5px;
+    font-size: 12px; /* Tamaño de texto reducido */
+    display: none; /* Inicialmente oculto */
+    white-space: nowrap; /* Evitar que el texto se divida en varias líneas */
+    max-width: 250px; /* Establece un tamaño máximo horizontal para que no ocupe todo el ancho */
+    text-overflow: ellipsis; /* Cortar el texto si es muy largo */
+    overflow: hidden; /* Asegurarse de que no haya desbordamientos */
+}
+
+.whatsapp-button:hover:after {
+    display: block; /* Mostrar el texto al hacer hover */
+}
+
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 480px) {
+    .whatsapp-button:after {
+        font-size: 10px; /* Texto más pequeño */
+        padding: 3px 6px; /* Ajuste de padding */
+        max-width: 150px; /* Reducir el tamaño máximo del tooltip */
+    }
+}
 *:focus {
     outline: none !important;
     -webkit-tap-highlight-color: transparent;
