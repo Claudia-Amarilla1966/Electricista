@@ -25,11 +25,21 @@
     gtag('config', 'AW-644151008'); 
 </script>
 
-<!-- Event snippet for whatsapp SIFATT conversion page --> 
-<script> 
-    gtag('event', 'conversion', {'send_to': 'AW-644151008/1MPLCMrotesZEODtk7MC'}); 
+<!-- Event snippet for whatsapp SIFATT conversion page -->
+<script>
+    function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof(url) != 'undefined') {
+                window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-644151008/1MPLCMrotesZEODtk7MC',
+            'event_callback': callback
+        });
+        return false;
+    }
 </script>
-
 
 </head>
 
@@ -58,7 +68,6 @@
             </nav>
     </header>
     
-
     <div class="hero-section">
         <img src="./imagenes/hombre-trabajando.jpg" alt="Electricista realizando instalación eléctrica en un hogar">
         <div class="hero-text">
@@ -110,8 +119,6 @@
         </div>
         <section class="services">
             <h2 class="visually-hidden">Nuestros Servicios</h2>
-    
-        
             <article class="service">
                 <img src="./imagenes/cortinas.jpg" alt="Control de cortinas">
                 <h2>Control de Cortinas</h2>
@@ -131,12 +138,12 @@
                 <a href="./paginas/contacto.html" class="cta-button">Solicite Cotización</a>
             </article>
         </section>
-
-
-    <a href="https://wa.me/5491135882908" target="_blank" class="whatsapp-button" aria-label="Contactar por WhatsApp">
-    <i class="fa fa-whatsapp"></i>
+    <!-- Botón de wassap con seguimiento de conversación -->
+    <a href="https://wa.me/5491135882908" target="_blank" class="whatsapp-button" aria-label="Contactar por WhatsApp" onclick="return gtag_report_conversion('https://wa.me/5491135882908');">
+        <i class="fa fa-whatsapp"></i>
     </a>
     
+
     <footer class="footer">
         <div class="footer-content">
             <p>
