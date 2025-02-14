@@ -26,18 +26,18 @@
 </script>
 
 <!-- Event snippet for whatsapp SIFATT conversion page -->
+
 <script>
     function gtag_report_conversion(url) {
-        var callback = function () {
-            if (typeof(url) != 'undefined') {
-                window.location = url;
-            }
-        };
         gtag('event', 'conversion', {
             'send_to': 'AW-644151008/1MPLCMrotesZEODtk7MC',
-            'event_callback': callback
+            'event_callback': function() {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            }
         });
-        return false;
+        return false; // Evita que el enlace se abra inmediatamente
     }
 </script>
 
@@ -139,7 +139,7 @@
             </article>
         </section>
     <!-- Botón de wassap con seguimiento de conversación -->
-    <a href="https://wa.me/5491135882908" target="_blank" class="whatsapp-button" aria-label="Contactar por WhatsApp" onclick="return gtag_report_conversion('https://wa.me/5491135882908');">
+    <a href="https://wa.me/5491135882908" target="_blank" class="whatsapp-button" aria-label="Contactar por WhatsApp" onclick="gtag_report_conversion('https://wa.me/5491135882908'); return false;">
         <i class="fa fa-whatsapp"></i>
     </a>
     
@@ -198,4 +198,3 @@
         });
     </script>
 </body>
-</html>
