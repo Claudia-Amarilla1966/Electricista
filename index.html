@@ -37,7 +37,7 @@
                 }
             }
         });
-        return false; // Evita que el enlace se abra inmediatamente
+        return false; 
     }
 </script>
 
@@ -79,8 +79,8 @@
     </div>
     <div class="main-container">
     <section class="intro">
-        <h2>Exelencia en Servicios Eléctricos</h2>
-        <p>Gracias a nuestra vasta experiencia y un fuerte compromiso,garantizamos soluciones eléctricas de alta calidad para su hogar y negocio.</p>
+        <h2>Excelencia en Servicios Eléctricos</h2>
+        <p>Gracias a nuestra vasta experiencia y un fuerte compromiso, garantizamos soluciones eléctricas de alta calidad para su hogar y negocio.</p>
     </section>
     </div>
     
@@ -90,7 +90,7 @@
         <article class="service">
             <img src="imagenes/distributor-1981648_640.jpg" alt="Profesionales capacitados">
             <h2>Servicios Eléctricos Profesionales</h2>
-            <p>Ofrecemos servicios de calidad respaldados por nuestra amplia experiencia y capacitación.Si requiere una instalación nueva o una reparación urgente,estamos listos para proporcionarle la mejor solución. </p>
+            <p>Ofrecemos servicios de calidad respaldados por nuestra amplia experiencia y capacitación.Si requiere una instalación nueva o una reparación urgente, estamos listos para proporcionarle la mejor solución. </p>
             <a href="./paginas/contacto.html" class="cta-button">Solicite Cotización</a>
         </article>
         <article class="service">
@@ -178,23 +178,28 @@
         </div>
     </footer>
     <a href="#" class="back-to-top" aria-label="Volver arriba">&#8679;</a>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Botón Volver Arriba
+            document.querySelector('.back-to-top').addEventListener('click', function (e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
     
+            // Menú Hamburguesa
+            document.querySelector('.menu-toggle').addEventListener('click', function () {
+                document.querySelector('.nav-links').classList.toggle('active');
+            });
+        });
+    </script>
     <script> 
         gtag('config', 'AW-644151008/Xh35CKf1p-sZEODtk7MC', { 'phone_conversion_number': '+54 9 11 3588 2908' }); 
     </script>
 
-    <script>gtag('config', 'AW-644151008/CDbiCOPgtesZEODtk7MC', { 'phone_conversion_number': '+54 9 11 2878 4592' });
+    <script>
+        gtag('config', 'AW-644151008/CDbiCOPgtesZEODtk7MC', { 'phone_conversion_number': '+54 9 11 2878 4592' });
     </script>
     
-    <script>
-        document.querySelector('.back-to-top').addEventListener('click', function (e) {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-        
-
-        document.querySelector('.menu-toggle').addEventListener('click', function () {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-    </script>
 </body>
